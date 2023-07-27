@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>fruit-brust-assignment-3</title>
+  <!-- script for Tailwind and Daisy UI -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- theme -->
+  <html data-theme="light">
+
+  </html>
+
+  <!-- font awesome link -->
+  <script src="https://kit.fontawesome.com/c21a42c815.js" crossorigin="anonymous"></script>
+  <!-- ---Google fonts-- -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+
+  <!-- ----styles---- -->
+  <style>
+    .lato {
+      font-family: 'Lato';
+    }
+
+    .primary-btn {
+      background-color: #F85559;
+      color: #fff;
+      font-weight: 900;
+      padding: 15px 30px;
+      border-radius: 8px;
+      border: none;
+
+    }
+
+    .primary-btn:hover {
+      background-color: #fa9092
+    }
+
+    .border-circle {
+      border-radius: 600px !important;
+      -ms-border-radius: 600px !important;
+      -moz-border-radius: 600px !important;
+      -webkit-border-radius: 600px !important;
+      -o-border-radius: 600px !important;
+    }
+
+
+
+    .banner-gradient {
+      background: linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%);
+
+    }
+  </style>
+</head>
+
+<body class="lato">
+
+  <nav class="max-w-screen-xl mx-auto px-5 md:px-8 lg:px-16 py-5">
+    <!-- nav start -->
+    <!-- mobile nav codes-->
+    <div class="flex justify-between bg-white md:bg-navbarbg rounded-full py-4 px-5 lg:hidden px-2">
+      <div class="flex items-center justify-center gap-2">
+        <img src="./images/logo.png " class="h-10" alt="">
+        <a class=" normal-case text-xl font-bold text-black">Fruit Brust</a>
+      </div>
+      <div class="">
+        <div class="dropdown">
+          <label tabindex="0" class="btn btn-ghost btn-circle">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
+            </svg>
+          </label>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] shadow bg-black rounded-box w-auto ">
+            <li><a class=" font-medium text-base text-white ">Home</a></li>
+            <li><a class=" font-medium text-base text-white ">About Us</a></li>
+            <li><a class=" font-medium text-base text-white ">Shop</a></li>
+            <li><a class=" font-medium text-base text-white ">All Fruits</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- medium and large device nav codes-->
+    <div class="hidden lg:block">
+      <div class=" max-w-screen-xl navbar rounded-full py-4 px-5 bg-[#f85559]">
+        <div class="navbar-start hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a class=" font-medium text-base text-white ">Home</a></li>
+            <li><a class=" font-medium text-base text-white ">About Us</a></li>
+            <li><a class=" font-medium text-base text-white ">Shop</a></li>
+            <li><a class=" font-medium text-base text-white ">All Fruits</a></li>
+          </ul>
+        </div>
+        <div class="navbar-center">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" <path stroke-linecap="round" stroke-linejoin="rounded-full" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h7" />
+              </svg>
+            </label>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a class="text-white font-medium text-lg ">Home</a></li>
+              <li><a class="text-white font-medium text-lg ">About Us</a></li>
+              <li><a class="text-white font-medium text-lg ">Shop</a></li>
+              <li><a class="text-white font-medium text-lg ">All Fruits</a></li>
+            </ul>
+          </div>
+
+          <div class="flex items-center justify-center gap-2">
+            <img src="./images/logo.png " class="h-10" alt="">
+            <a class=" normal-case text-xl  text-white">Fruit Brust</a>
+          </div>
+        </div>
+        <div class="navbar-end ">
+          <div class="form-control">
+            <label class="input-group">
+              <input type="text" placeholder="Search here" class=" border-circle input relative  w-[300px] -mr-4 " />
+              <i
+                class="fa-solid fa-magnifying-glass bg-transparent text-black top-4 right-5 relative border-circle"></i>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ---Hero section-- -->
+  <section class="w-full mx-auto  py-5 px-4 md:px-16 lg:px-24 ">
+    <div class="carousel w-full">
+      <!-- slide1 -->
+      <div id="slide1" class="carousel-item relative w-full ">
+
+        <img src="./images/banner1.png" class="w-full " />
+        <!-- left & right toggle  -->
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide4" class="btn btn-circle">❮</a>
+          <a href="#slide2" class="btn btn-circle">❯</a>
+        </div>
+        <div>
+          <div
+            class="w-9/12 absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2  text-center text-[#fff]">
+
+            <h1 class="text-2xl lg:text-5xl font-extrabold leading-tight">Exotic tastes at <br> your doorstep</h1>
+            <p class="font-normal">We supply highly quality organic products</p>
+            <button class="primary-btn mt-8">Shop Now</button>
+          </div>
+        </div>
+
+        <!-- slide2 -->
+        <div id="slide2" class="carousel-item relative w-full ">
+
+          <img src="./images/banner2.png" class="w-full" />
+          <!-- left & right toggle  -->
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+          <div>
+            <div
+              class="w-9/12 absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2  text-center text-[#fff]">
+
+              <h1 class="text-2xl lg:text-5xl font-extrabold leading-tight">Exotic tastes at <br> your doorstep</h1>
+              <p class="font-normal">We supply highly quality organic products</p>
+              <button class="primary-btn mt-8">Shop Now</button>
+            </div>
+          </div>
+          <!-- slide3 -->
+          <div id="slide3" class="carousel-item relative w-full ">
+
+            <img src="./images/banner3.png" class="w-full" />
+            <!-- left & right toggle  -->
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+            <div>
+              <div
+                class="w-9/12 absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2  text-center text-[#fff]">
+
+                <h1 class="text-2xl lg:text-5xl font-extrabold leading-tight">Exotic tastes at <br> your doorstep</h1>
+                <p class="font-normal">We supply highly quality organic products</p>
+                <button class="primary-btn mt-8">Shop Now</button>
+              </div>
+            </div>
+
+            <!-- slide4 -->
+            <div id="slide4" class="carousel-item relative w-full ">
+
+              <img src="./images/banner4.png" class="w-full" />
+              <!-- left & right toggle  -->
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle">❮</a>
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+              <div>
+                <div
+                  class="w-9/12 absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2  text-center text-[#fff]">
+
+                  <h1 class="text-2xl lg:text-5xl font-extrabold leading-tight">Exotic tastes at <br> your doorstep</h1>
+                  <p class="font-normal">We supply highly quality organic products</p>
+                  <button class="primary-btn mt-8">Shop Now</button>
+                </div>
+              </div>
+            </div>
+
+  </section>
+
+  <div class="hidden md:flex lg:flex">
+    <div
+      class="relative md:bottom-32 flex w-4/6 mx-auto justify-evenly py-10  md:px-3 gap-5 bg-white rounded-xl shadow-lg">
+      <div class="">
+        <img class="h-20" src="./images/fruit1.png" alt="">
+        <p class="text-xl font-normal text-center pt-4">Strawberry</p>
+      </div>
+      <div>
+        <img class="h-20" src="./images/fruit2.png" alt="">
+        <p class="text-xl font-normal text-center pt-4">Orange</p>
+      </div>
+      <div>
+        <img class="h-20" src="./images/fruit3.png" alt="">
+        <p class="text-xl font-normal text-center pt-4">Mango</p>
+      </div>
+      <div>
+        <img class="h-20" src="./images/fruit4.png" alt="">
+        <p class="text-xl font-normal text-center pt-4">Strawberry</p>
+      </div>
+      <div>
+        <img class="h-20" src="./images/fruit5.png" alt="">
+        <p class="text-xl font-normal text-center pt-4">Mango</p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </main>
+
+
+
+
+
+
+  <footer class="footer footer-center py-5 lg:py-28 bg-black text-primary-content">
+    <div class=" md:py-5 flex items-center justify-center gap-2">
+      <img src="./images/logo.png " class="h-10" alt="">
+      <a class=" font-normal md:font-bold text-2xl md:text-4xl  text-white">Fruit Brust</a>
+    </div>
+    <div class="flex flex-wrap md:flex-row gap-10 md:py-5 md:gap-12 justify-center items-center">
+      <a href="#" class="font-semibold text-base lg:text-lg text-white ">Home</a>
+      <a href="#" class="font-semibold text-base lg:text-lg text-white">About Us</a>
+      <a href="#" class="font-semibold text-base lg:text-lg text-white">Shop</a>
+      <a href="#" class="font-semibold text-base lg:text-lg text-white">All Fruits</a>
+      <a href="#" class="font-semibold text-base lg:text-lg text-white">Support</a>
+      <a href="#" class="font-semibold text-base lg:text-lg text-white">My Account</a>
+    </div>
+
+    <div>
+      <div class="grid grid-flow-col gap-6 md:gap-12  ">
+        <a href="#"><img class="w-10/12 md:w-full" src="./images/f-twitter.png" alt=""></a>
+        <a href="#"><img class="w-10/12 md:w-full" src="./images/f-facebook.png" alt=""></a>
+        <a href="#"><img class="w-10/12 md:w-full" src="./images/f-youtube.png" alt=""></a>
+        <a href="#"><img class="w-10/12 md:w-full" src="./images/f-linkedin.png" alt=""></a>
+        <a href="#"><img class="w-10/12 md:w-full" src="./images/f-instagram.png" alt=""></a>
+        <a href="#"><img class="w-10/12 md:w-full" src="./images/f-apple.png" alt=""></a>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+</body>
+
+</html>
